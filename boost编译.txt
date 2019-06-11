@@ -1,0 +1,43 @@
+boost编译：
+
+bjam stage variant=debug release --stagedir="F:\libraries\boost_1_65_1" --with-locale --with-filesystem --with-iostreams --with-program_options --with-thread --with-log --with-context  --with-coroutine --with-date_time --with-program_options --with-regex --with-signals --with-python  --with-system --with-serialization    --layout=versioned threading=multi toolset=msvc-11.1  address-model=64
+runtime-link=static
+
+bjam stage variant=debug release --stagedir="F:\libraries\boost_1_67_0" --with-filesystem --with-iostreams --with-program_options --with-thread --with-log --with-context  --with-coroutine --with-date_time --with-program_options --with-regex --with-signals --with-python  --with-system --with-serialization  --with-random --with-locale  --with-fiber  --layout=versioned threading=multi toolset=msvc-14.1 address-model=64
+
+
+
+bjam stage variant=debug release --stagedir="F:\libraries\boost_1_67_0"  --with-regex   --layout=versioned threading=multi toolset=msvc-14.1 address-model=64
+
+全编译:
+bjam stage variant=debug release -—stagedir="C:\boost_1_69_0"  -—with-libraries=all   -—layout=versioned threading=multi toolset=msvc-11.0 address-model=64
+
+静态链接：runtime-link=static
+bjam stage variant=debug release --stagedir="F:\libraries\boost_1_67_0" --with-log --layout=versioned threading=multi toolset=msvc-14.0  address-model=64 runtime-link=static
+
+boost 需要编译的库
+--with-atomic
+--with-chrono
+--with-context
+--with-date_time
+--with-exception
+--with-filesystem
+--with-graph
+--with-graph_parallel
+--with-iostreams
+--with-locale
+--with-math 
+--with-mpi
+--with-program_options
+--with-python
+--with-random
+--with-regex
+--with-serialization
+--with-signals
+--with-system
+--with-test
+--with-thread
+--with-timer 
+--with-wave 
+--with-log
+--with-coroutine     
